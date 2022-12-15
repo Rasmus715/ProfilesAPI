@@ -1,0 +1,17 @@
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/Receiver
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/Receiver.deps.json
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/Receiver.runtimeconfig.json
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/Receiver.dll
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/Receiver.pdb
+/Volumes/Media/Projects/ProfilesAPI/Receiver/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.csproj.AssemblyReference.cache
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.AssemblyInfoInputs.cache
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.AssemblyInfo.cs
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.csproj.CoreCompileInputs.cache
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.csproj.CopyComplete
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.dll
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/refint/Receiver.dll
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.pdb
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/Receiver.genruntimeconfig.cache
+/Volumes/Media/Projects/ProfilesAPI/Receiver/obj/Debug/net7.0/ref/Receiver.dll

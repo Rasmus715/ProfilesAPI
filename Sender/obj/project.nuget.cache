@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XNofv/2kG3H23i0XrmEjZ9THVe9fa1G9aqOut9KmGM93SvoKogHF5A0K9dHBepuBItaKxVps+mym/55s5SzpJA==",
+  "success": true,
+  "projectFilePath": "/Volumes/Media/Projects/ProfilesAPI/Sender/Sender.csproj",
+  "expectedPackageFiles": [
+    "/Users/crackbargains/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
+    "/Users/crackbargains/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/crackbargains/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

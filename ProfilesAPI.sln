@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilesAPI", "ProfilesAPI\ProfilesAPI.csproj", "{10E5D165-FC50-4CFB-81A5-721EEAFF2203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationModels", "CommunicationModels\CommunicationModels.csproj", "{4EC4C939-2919-4F35-AED9-4F769C861EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqConsumer", "RabbitMqConsumer\RabbitMqConsumer.csproj", "{B19D6DF5-1F1D-4C36-B2E4-5AE003D9850F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingAPI", "LoggingAPI\LoggingAPI.csproj", "{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10E5D165-FC50-4CFB-81A5-721EEAFF2203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E5D165-FC50-4CFB-81A5-721EEAFF2203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E5D165-FC50-4CFB-81A5-721EEAFF2203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E5D165-FC50-4CFB-81A5-721EEAFF2203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC4C939-2919-4F35-AED9-4F769C861EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC4C939-2919-4F35-AED9-4F769C861EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC4C939-2919-4F35-AED9-4F769C861EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC4C939-2919-4F35-AED9-4F769C861EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19D6DF5-1F1D-4C36-B2E4-5AE003D9850F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19D6DF5-1F1D-4C36-B2E4-5AE003D9850F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19D6DF5-1F1D-4C36-B2E4-5AE003D9850F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19D6DF5-1F1D-4C36-B2E4-5AE003D9850F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

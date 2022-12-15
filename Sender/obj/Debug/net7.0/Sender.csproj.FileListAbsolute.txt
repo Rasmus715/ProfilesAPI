@@ -1,0 +1,17 @@
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/Sender
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/Sender.deps.json
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/Sender.runtimeconfig.json
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/Sender.dll
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/Sender.pdb
+/Volumes/Media/Projects/ProfilesAPI/Sender/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.csproj.AssemblyReference.cache
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.AssemblyInfoInputs.cache
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.AssemblyInfo.cs
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.csproj.CoreCompileInputs.cache
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.csproj.CopyComplete
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.dll
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/refint/Sender.dll
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.pdb
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/Sender.genruntimeconfig.cache
+/Volumes/Media/Projects/ProfilesAPI/Sender/obj/Debug/net7.0/ref/Sender.dll
