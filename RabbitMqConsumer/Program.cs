@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Diagnostics;
-using System.Text;
 using System.Text.Json;
 using CommunicationModels;
 using RabbitMQ.Client;
@@ -40,6 +39,9 @@ var factory = new ConnectionFactory
 };
 using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
+
+channel.ExchangeDeclare("logs", ExchangeType.Fanout);
+
 channel.QueueDeclare("LogsQueue",
     false,
     false,

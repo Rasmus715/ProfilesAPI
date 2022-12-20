@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-RabbitMqHostedService-03F9BCBA-2DEC-4F4F-AFFF-9D9EE9558AD9</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="8.0.9" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+        <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+        <PackageReference Include="RavenDB.Client" Version="5.4.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommunicationModels\CommunicationModels.csproj" />
+    </ItemGroup>
+</Project>

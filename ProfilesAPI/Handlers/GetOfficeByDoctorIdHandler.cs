@@ -26,26 +26,31 @@ public class GetOfficeByDoctorIdHandler : IRequestHandler<GetOfficeByDoctorIdQue
         
         if (doctor.OfficeId is null)
             throw new ArgumentNullException($"OfficeID of Doctor {doctor.Id} is null");
-        
+
+        var office = await GetOffice(doctor, cancellationToken);
+            
+        return office;
+    }
+
+    private async Task<Office?> GetOffice(Doctor doctor, CancellationToken cancellationToken)
+    {
         var httpClient = _httpClientFactory.CreateClient("OfficesAPI");
 
         var httpResponseMessage = await httpClient
             .GetAsync(
-            "?id=" + doctor.OfficeId, cancellationToken);
+                "?id=" + doctor.OfficeId, cancellationToken);
 
         if (!httpResponseMessage.IsSuccessStatusCode) 
             throw new HttpRequestException("Something went wrong");
         
         await using var contentStream =
             await httpResponseMessage.Content.ReadAsStreamAsync(cancellationToken);
-
-        var office = await JsonSerializer.DeserializeAsync
+        
+        return await JsonSerializer.DeserializeAsync
             <Office>(contentStream, cancellationToken: cancellationToken, 
                 options: new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-            });
-
-        return office;
+                {
+                    PropertyNameCaseInsensitive = true,
+                });
     }
 }

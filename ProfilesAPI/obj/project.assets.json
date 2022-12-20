@@ -8,14 +8,10 @@
           "Microsoft.CSharp": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.1/AutoMapper.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/AutoMapper.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/AutoMapper.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
@@ -34,14 +30,10 @@
       "Lambda2Js.Signed/3.1.4": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Lambda2Js.Signed.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Lambda2Js.Signed.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Lambda2Js.Signed.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Lambda2Js.Signed.dll": {}
         }
       },
       "MediatR/11.1.0": {
@@ -50,27 +42,19 @@
           "MediatR.Contracts": "1.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MediatR.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/MediatR.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/MediatR.dll": {}
         }
       },
       "MediatR.Contracts/1.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
         }
       },
       "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
@@ -93,14 +77,10 @@
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         }
       },
       "Microsoft.AspNetCore.OpenApi/7.0.0": {
@@ -109,14 +89,10 @@
           "Microsoft.OpenApi": "1.4.3"
         },
         "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
+          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {}
         },
         "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
+          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -125,14 +101,10 @@
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -158,14 +130,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -178,14 +146,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
@@ -194,14 +158,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -210,27 +170,19 @@
       "Microsoft.OpenApi/1.4.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Nito.AsyncEx.Coordination/5.1.2": {
@@ -240,14 +192,10 @@
           "Nito.Collections.Deque": "1.1.1"
         },
         "compile": {
-          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {}
         }
       },
       "Nito.AsyncEx.Tasks/5.1.2": {
@@ -256,27 +204,19 @@
           "Nito.Disposables": "2.2.1"
         },
         "compile": {
-          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {}
         }
       },
       "Nito.Collections.Deque/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Nito.Collections.Deque.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.Collections.Deque.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Nito.Collections.Deque.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Nito.Collections.Deque.dll": {}
         }
       },
       "Nito.Disposables/2.2.1": {
@@ -285,14 +225,10 @@
           "System.Collections.Immutable": "1.7.1"
         },
         "compile": {
-          "lib/netstandard2.1/Nito.Disposables.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Nito.Disposables.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Nito.Disposables.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Nito.Disposables.dll": {}
         }
       },
       "RabbitMQ.Client/6.4.0": {
@@ -302,14 +238,10 @@
           "System.Threading.Channels": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
       "RavenDB.Client/5.4.5": {
@@ -325,20 +257,12 @@
           "System.Security.Cryptography.Cng": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/Raven.Client.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0/Sparrow.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Raven.Client.dll": {},
+          "lib/net6.0/Sparrow.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Raven.Client.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0/Sparrow.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Raven.Client.dll": {},
+          "lib/net6.0/Sparrow.dll": {}
         },
         "runtimeTargets": {
           "runtimes/linux-arm/native/libzstd.arm.32.so": {
@@ -389,14 +313,10 @@
           "Microsoft.OpenApi": "1.2.3"
         },
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -408,27 +328,19 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
         }
       },
       "Swashbuckle.AspNetCore.SwaggerUI/6.4.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -437,27 +349,19 @@
       "System.Collections.Immutable/1.7.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.Formats.Asn1/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Formats.Asn1.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Formats.Asn1.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -472,14 +376,10 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -491,14 +391,10 @@
           "System.Formats.Asn1": "5.0.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {}
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
@@ -510,14 +406,10 @@
       "System.Threading.Channels/4.7.1": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
         }
       },
       "CommunicationModels/1.0.0": {

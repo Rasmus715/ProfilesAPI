@@ -12,18 +12,16 @@ public interface IRavenRepository<T> where T : class, IEntity
     Task<T> Update(T obj);
     Task Delete(Guid id);
     Task<T> Get(Guid id);
-    Task<IEnumerable<T>> Get();
+    Task<List<T>> Get();
 }
 
 public class RavenRepository<T> : IRavenRepository<T> where T : class, IEntity
 {
     private readonly IAsyncDocumentSession _documentSession;
-    private readonly IMapper _mapper;
 
-    public RavenRepository(IRavenContext context, IMapper mapper)
+    public RavenRepository(IAsyncDocumentSession session)
     {
-        _mapper = mapper;
-        _documentSession = context.Store.OpenAsyncSession();
+        _documentSession = session;
     }
 
     public async Task<T> Create(T obj)
@@ -59,6 +57,10 @@ public class RavenRepository<T> : IRavenRepository<T> where T : class, IEntity
     public async Task Delete(Guid id)
     {
         var element = await _documentSession.LoadAsync<T>(id.ToString());
+        
+        if (element is null)
+            throw new ArgumentNullException(nameof(id), "Element is not found");
+        
         _documentSession.Delete(element);
         await _documentSession.SaveChangesAsync();
     }
@@ -69,7 +71,7 @@ public class RavenRepository<T> : IRavenRepository<T> where T : class, IEntity
         return element;
     }
 
-    public async Task<IEnumerable<T>> Get()
+    public async Task<List<T>> Get()
     {
         var elements = await _documentSession.Query<T>().ToListAsync();
         return elements;

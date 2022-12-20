@@ -1,0 +1,70 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5055
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Gateway/{everything}",
+            "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PATCH" ],
+            "SwaggerKey": "offices"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5052
+                }
+            ],
+            "UpstreamPathTemplate": "/api/orders/{everything}",
+            "UpstreamHttpMethod": [ "Get" ],
+            "SwaggerKey": "orders"
+        }
+    ],
+    "SwaggerEndPoints": [
+        {
+            "Key": "offices",
+            "Config": [
+                {
+                    "Name": "Offices API",
+                    "Version": "v1",
+                    "Url": "http://localhost:5055/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "orders",
+            "Config": [
+                {
+                    "Name": "Orders API",
+                    "Version": "v0.9",
+                    "Url": "http://localhost:5200/swagger/v0.9/swagger.json"
+                },
+                {
+                    "Name": "Orders API",
+                    "Version": "v1",
+                    "Url": "http://localhost:5200/swagger/v1/swagger.json"
+                },
+                {
+                    "Name": "Orders API",
+                    "Version": "v2",
+                    "Url": "http://localhost:5200/swagger/v2/swagger.json"
+                },
+                {
+                    "Name": "Orders API",
+                    "Version": "v3",
+                    "Url": "http://localhost:5200/swagger/v3/swagger.json"
+                }
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5052"
+    }
+}

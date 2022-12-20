@@ -28,6 +28,7 @@ builder.Services.AddHttpClient("OfficesAPI", httpClient =>
 {
     httpClient.BaseAddress = new Uri("http://localhost:5055/api/Offices/");
 });
+
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -45,6 +46,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

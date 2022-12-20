@@ -8,6 +8,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqConsumer", "RabbitM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingAPI", "LoggingAPI\LoggingAPI.csproj", "{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationAPI", "AuthorizationAPI\AuthorizationAPI.csproj", "{3C7298CC-64F9-4C21-9F96-6CA5621221A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqHostedService", "RabbitMqHostedService\RabbitMqHostedService.csproj", "{E3F0C56B-E2CC-477C-985B-F34B95491D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotAPI", "OcelotAPI\OcelotAPI.csproj", "{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilesAPI.UnitTests", "ProfilesAPI.UnitTests\ProfilesAPI.UnitTests.csproj", "{DC914175-36E9-4EF3-985D-416705B30D8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +38,21 @@ Global
 		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27BAA016-12F7-46E2-9F41-C6A11C57CD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7298CC-64F9-4C21-9F96-6CA5621221A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7298CC-64F9-4C21-9F96-6CA5621221A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7298CC-64F9-4C21-9F96-6CA5621221A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7298CC-64F9-4C21-9F96-6CA5621221A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F0C56B-E2CC-477C-985B-F34B95491D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F0C56B-E2CC-477C-985B-F34B95491D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F0C56B-E2CC-477C-985B-F34B95491D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F0C56B-E2CC-477C-985B-F34B95491D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC914175-36E9-4EF3-985D-416705B30D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC914175-36E9-4EF3-985D-416705B30D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC914175-36E9-4EF3-985D-416705B30D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC914175-36E9-4EF3-985D-416705B30D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

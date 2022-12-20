@@ -1,0 +1,1041 @@
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:31:01.5509610Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 9303, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.253 GBytes Available Memory, 1.253 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:31:12.7463920Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:31:37.9888920Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:31:37.9889020Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:31:37.9890790Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:31:37.9890800Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:31:38.4808360Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:31:38.4958450Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:35:16.3944780Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 10093, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.348 GBytes Available Memory, 1.348 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:35:19.9396130Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:35:32.2996550Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:35:32.2929220Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:35:32.2934740Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:35:32.2931890Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:35:32.6968390Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:35:32.6989450Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:37:00.9363950Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 10410, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.398 GBytes Available Memory, 1.398 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:37:04.8159610Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:37:11.5271970Z, 13, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1620286) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:37:19.5100920Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:37:19.5098450Z, 29, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:37:19.5102260Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:37:19.5099620Z, 30, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:37:19.6459380Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:37:19.6478910Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:38:48.9390370Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 10746, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.39 GBytes Available Memory, 1.39 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:38:52.5679370Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:39:06.5463070Z, 29, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:39:06.5471620Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:39:06.5464470Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:39:06.5467490Z, 32, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:39:06.7566400Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:39:06.7695140Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:43:11.3903980Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 11577, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.597 GBytes Available Memory, 1.597 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:43:21.7896900Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:43:32.4913690Z, 20, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3789735) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:43:42.3005330Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:43:42.3005360Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:43:42.3005670Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:43:42.3055580Z, 23, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:43:42.4830480Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:43:42.5010210Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:46:19.5166710Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 12183, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.451 GBytes Available Memory, 1.451 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:46:23.0996190Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:46:31.2705870Z, 20, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2816058) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:46:38.9909340Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:46:38.9914010Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:46:38.9911640Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:46:38.9915800Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:46:39.2779470Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:46:39.3076660Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:50:27.2495260Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 12940, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.509 GBytes Available Memory, 1.509 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:50:31.0922170Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:50:38.7585220Z, 8, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2474006) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:50:47.2092030Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:50:47.2095490Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:50:47.2098800Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:50:47.2098090Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:50:47.3722950Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:50:47.3920700Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:53:50.7263790Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 13577, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.483 GBytes Available Memory, 1.483 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:53:54.5993420Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:54:00.9061220Z, 8, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1750454) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:54:10.9113860Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:54:10.9113780Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:54:11.0285530Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:54:11.0537640Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T08:54:57.2431010Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 13763, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.504 GBytes Available Memory, 1.504 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T08:55:14.8980880Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T08:55:32.7357630Z, 18, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1544473) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:55:56.2962140Z, 1, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.9621685) to change the state to Follower in term -1. (Election timeout:00:00:00.3000000)
+2022-12-20T08:55:56.7427550Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T08:55:56.7498690Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+2022-12-20T08:55:55.3166300Z, 18, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:55:55.3164060Z, 23, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:55:55.3163720Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T08:55:55.3131620Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:01:00.1741340Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 14917, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.445 GBytes Available Memory, 1.445 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:01:04.5478820Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:01:12.6547150Z, 12, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2444232) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:01:20.7682600Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:01:20.7688390Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:01:20.7682600Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:01:20.7687930Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:01:20.9243170Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:01:20.9263450Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:01:38.5949420Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 15036, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.397 GBytes Available Memory, 1.397 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:01:44.2923270Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:01:53.8965510Z, 20, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2153019) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:02:03.8708900Z, 24, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:02:03.8708840Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:02:03.8809110Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:02:03.8743690Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:02:03.9961510Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:02:03.9987630Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:04:20.8262290Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 15526, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.488 GBytes Available Memory, 1.488 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:04:28.7221740Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:04:39.4481170Z, 8, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3016828) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:04:48.4624580Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:04:48.4901220Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:05:59.7833300Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 15839, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.519 GBytes Available Memory, 1.519 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:06:05.6817310Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:06:15.6522280Z, 10, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2516450) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:06:24.9161450Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:06:24.9160720Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:06:24.9160770Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:06:24.9160860Z, 22, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:06:25.0323180Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:06:25.0360060Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:09:48.6457400Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 16558, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.496 GBytes Available Memory, 1.496 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:09:54.0371660Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:10:10.4377070Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:10:10.4377030Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:10:10.4377150Z, 28, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:10:10.4378080Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:10:10.6265430Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:10:10.6320340Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:12:28.6758660Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 17037, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.509 GBytes Available Memory, 1.509 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:12:35.1801720Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:12:44.4210280Z, 12, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1959749) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:12:56.3544190Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:12:56.3626820Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:12:56.3631730Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:12:56.3631650Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:12:56.7254640Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:12:56.7375450Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:15:10.0356320Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 17537, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.603 GBytes Available Memory, 1.603 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:15:13.4247270Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:15:19.6128950Z, 10, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1535709) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:15:26.5567030Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:15:26.5569340Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:15:26.5565290Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:15:26.6821950Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:15:26.6852670Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:18:38.0744130Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 18148, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.559 GBytes Available Memory, 1.559 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:18:49.9521880Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:19:09.0829530Z, 23, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1616371) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:19:32.9872280Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:19:31.6165630Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:19:31.6193480Z, 14, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:19:31.6165630Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:19:31.6165630Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:19:33.0103170Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:46:31.1710070Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 23341, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.343 GBytes Available Memory, 1.343 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:46:35.4658510Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:46:43.6282640Z, 20, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1788584) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:46:50.8079310Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:46:50.8097950Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:46:50.8081200Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:46:50.8103260Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:46:50.9933800Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:46:50.9958140Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:47:42.0045050Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 23560, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.502 GBytes Available Memory, 1.502 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:47:45.7973130Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:47:53.5149390Z, 13, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1656260) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:48:02.4420970Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:48:02.4420970Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:48:02.4423440Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:48:02.5980160Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:48:02.6036060Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:49:34.0370530Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 23909, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.513 GBytes Available Memory, 1.513 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:49:37.7167140Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:49:44.4870110Z, 12, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1545586) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:49:52.6630720Z, 33, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:49:52.6637110Z, 35, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:49:52.6637320Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:49:52.6625870Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:49:52.8325540Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:49:52.8448950Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:51:02.5926230Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 24167, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.538 GBytes Available Memory, 1.538 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:51:10.4195580Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:51:23.2204800Z, 20, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2453093) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:51:36.7014590Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:51:36.7017500Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:51:36.7014860Z, 22, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:51:36.7020540Z, 21, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:51:36.8443700Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:51:36.8480010Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:52:31.8074610Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 24457, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.566 GBytes Available Memory, 1.566 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:52:35.5633470Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:52:42.5721450Z, 13, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2724613) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:52:51.9907690Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:52:51.9901950Z, 30, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:52:51.9903190Z, 32, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:52:51.9904970Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:52:52.0966550Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:52:52.0999700Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:54:14.5333260Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 24764, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.565 GBytes Available Memory, 1.565 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:54:21.5013280Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:54:33.7112970Z, 13, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1810500) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:54:48.5788070Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:54:47.0331510Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:54:47.0331030Z, 22, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:54:48.6030590Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+2022-12-20T09:54:47.0331020Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:54:47.0331030Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T09:55:28.5107290Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 24966, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.537 GBytes Available Memory, 1.537 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T09:55:44.2943410Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T09:56:02.8799920Z, 14, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2491140) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:56:54.1533170Z, 1, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.6703491) to change the state to Follower in term -1. (Election timeout:00:00:00.3000000)
+2022-12-20T09:56:54.8103150Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T09:56:54.8148630Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+2022-12-20T09:56:53.4457800Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:56:53.4460000Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:56:53.4457200Z, 30, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T09:56:53.4459970Z, 23, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:41:28.4498310Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 29385, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.385 GBytes Available Memory, 1.385 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:41:32.7898620Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:41:48.2468430Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:41:48.2467030Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:41:48.2467030Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:41:48.2488740Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:41:48.3774810Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:41:48.3807200Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:42:28.0721160Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 29564, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.451 GBytes Available Memory, 1.451 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:42:36.3107720Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:42:48.3181150Z, 12, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1884119) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T10:43:01.2428460Z, 23, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:01.2428400Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:01.2451790Z, 21, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:02.4400110Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:43:02.4435520Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:43:24.9012270Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 29741, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.471 GBytes Available Memory, 1.471 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:43:34.8069070Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:43:45.3900580Z, 8, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1532834) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T10:43:59.9932830Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:59.9916060Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:59.9931220Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:43:59.9954710Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:44:01.5505760Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:44:01.5529800Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:48:33.2361850Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 30676, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.418 GBytes Available Memory, 1.418 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:48:43.1672260Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:49:12.8662480Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:49:12.8876050Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+2022-12-20T10:49:11.2236460Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:49:11.2203320Z, 24, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:49:11.2245110Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:49:11.2203360Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:50:05.5119740Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 30961, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.53 GBytes Available Memory, 1.53 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:50:10.8905930Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:50:18.1917540Z, 8, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2668687) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T10:50:26.9905440Z, 20, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:50:26.9938180Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:50:26.9938150Z, 13, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:50:26.9940740Z, 10, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:50:27.1276150Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:50:27.1365600Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T10:52:08.6579420Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 31347, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.532 GBytes Available Memory, 1.532 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T10:52:13.7014900Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T10:52:30.7596010Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:52:30.7571380Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:52:30.7596010Z, 30, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:52:30.7571440Z, 27, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T10:52:30.9073130Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T10:52:30.9138190Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T11:01:47.3947790Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 33157, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.453 GBytes Available Memory, 1.453 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T11:01:52.7785590Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T11:02:00.5513010Z, 10, Operations, ?, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.1530413) to change the state to LeaderElect in term 1. (Election timeout:00:00:00.3000000)
+2022-12-20T11:02:15.3092370Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:02:15.3094060Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:02:15.3168530Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:02:15.3165300Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:02:15.5209270Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T11:02:15.5271600Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T11:17:35.9771400Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 36143, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.434 GBytes Available Memory, 1.434 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T11:17:41.1706560Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T11:18:02.8366620Z, 29, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:18:02.8366580Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:18:02.8366620Z, 32, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:18:02.8408540Z, 8, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:18:03.0364500Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T11:18:03.0513820Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T11:37:06.2837490Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 39798, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.53 GBytes Available Memory, 1.53 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T11:37:09.8528600Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T11:37:26.9039800Z, 31, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:37:26.9004590Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:37:27.0275560Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T11:37:27.0308930Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)
+Time, Thread, Level, Source, Logger, Message, Exception
+2022-12-20T11:38:06.2478060Z, 1, Operations, Server, Raven.Server.Program,  Build 54000, Version 5.4, SemVer 5.4.0, Commit 0c67628
+ PID 39986, 64 bits, 4 Cores, Arch: X64
+ 6 GBytes Physical Memory, 1.481 GBytes Available Memory, 1.481 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2022-12-20T11:38:10.7227490Z, 1, Operations, Server, Sparrow.Platform.Posix.KernelVirtualFileSystemUtils, Unable to read and parse '/proc/swaps', cannot read swap information, EXCEPTION: System.IO.DirectoryNotFoundException: Could not find a part of the path '/proc/swaps'.
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Interop.CheckIo(Error error, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.UnixFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at Sparrow.Platform.Posix.KernelVirtualFileSystemUtils.ReadSwapInformationFromSwapsFile(String filename) in C:\Builds\RavenDB-Stable-5.4\54000\src\Sparrow.Server\Platform\Posix\KernelVirtualFileSystemUtils.cs:line 87
+2022-12-20T11:38:29.8769700Z, 29, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:38:29.8768660Z, 25, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:38:29.8789580Z, 12, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:38:29.8762310Z, 26, Operations, Server/TCP, Raven.Server.RavenServer, Failed to accept new tcp connection again, will wait 1 seconds before retrying, EXCEPTION: System.InvalidOperationException: Not listening. You must call the Start() method before calling this method.
+   at Raven.Server.RavenServer.AcceptTcpClientAsync(TcpListener listener) in C:\Builds\RavenDB-Stable-5.4\54000\src\Raven.Server\RavenServer.cs:line 2175
+2022-12-20T11:38:30.0496700Z, 1, Operations, Server, Raven.Server.Program, Server has shut down
+2022-12-20T11:38:30.0591850Z, 2, Operations, Server, Raven.Server.Program, Server is about to shut down (interactive mode)

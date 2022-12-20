@@ -20,17 +20,16 @@ public class DoctorsController : ControllerBase
 
     [HttpGet]
     [Route("{id:guid}")]
-    public async Task<Doctor> Get(Guid id)
+    public async Task<IActionResult> Get(Guid id)
     {
-        return await _mediator.Send(new GetDoctorByIdQuery(id));
+        return Ok(await _mediator.Send(new GetDoctorByIdQuery(id)));
     }
     
     [HttpDelete]
     [Route("{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
-        await _mediator.Send(new DeleteDoctorCommand(id));
-        return Ok();
+        return Ok(await _mediator.Send(new DeleteDoctorCommand(id)));
     }
     
     [HttpPost]
@@ -52,8 +51,7 @@ public class DoctorsController : ControllerBase
     {
         try
         {
-            var result = await _mediator.Send(new UpdateDoctorCommand(doctor));
-            return Ok(result);
+            return Ok(await _mediator.Send(new UpdateDoctorCommand(doctor)));
         }
         catch (ArgumentNullException)
         {

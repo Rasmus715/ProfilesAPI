@@ -10,11 +10,11 @@ namespace ProfilesAPI.Data;
 
 public interface IRavenContext
 {
-    public IDocumentStore Store { get; }
+    public IDocumentStore Store { get; set; }
 }
 public class RavenContext : IRavenContext
 {
-    public IDocumentStore Store { get; }
+    public IDocumentStore Store { get; set; }
 
     private readonly PersistenceSettings _persistenceSettings;
 
