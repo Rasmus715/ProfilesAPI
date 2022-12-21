@@ -1,4 +1,3 @@
-using AutoMapper;
 using ProfilesAPI.Data;
 using ProfilesAPI.Models;
 using Raven.Client.Documents;
@@ -19,9 +18,9 @@ public class RavenRepository<T> : IRavenRepository<T> where T : class, IEntity
 {
     private readonly IAsyncDocumentSession _documentSession;
 
-    public RavenRepository(IAsyncDocumentSession session)
+    public RavenRepository(IRavenContext context)
     {
-        _documentSession = session;
+        _documentSession = context.GetSession();
     }
 
     public async Task<T> Create(T obj)
@@ -38,7 +37,6 @@ public class RavenRepository<T> : IRavenRepository<T> where T : class, IEntity
 
         if (element is null)
             throw new ArgumentNullException(nameof(element), "There is no such element in database");
-
 
         _documentSession.Delete(element);
         await _documentSession.SaveChangesAsync();

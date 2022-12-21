@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqHostedService", "Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotAPI", "OcelotAPI\OcelotAPI.csproj", "{BAD89060-DF46-4BA2-8D60-84E4C1B1E44B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilesAPI.UnitTests", "ProfilesAPI.UnitTests\ProfilesAPI.UnitTests.csproj", "{DC914175-36E9-4EF3-985D-416705B30D8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfilesAPI.Tests", "ProfilesAPI.Tests\ProfilesAPI.Tests.csproj", "{DC914175-36E9-4EF3-985D-416705B30D8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

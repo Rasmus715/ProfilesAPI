@@ -1,3 +1,4 @@
+using System.Reflection;
 using AutoMapper;
 using MediatR;
 using ProfilesAPI;
@@ -18,11 +19,11 @@ var mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 // Add services to the container.
-builder.Services.AddMediatR(typeof(Program));
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.Configure<PersistenceSettings>(builder.Configuration.GetSection("Database"));
-builder.Services.AddScoped<IRavenContext, RavenContext>();
+builder.Services.AddSingleton<IRavenContext, RavenContext>();
 builder.Services.AddScoped<IRabbitMqService, RabbitMqService>();
-builder.Services.AddScoped(typeof(IRavenRepository<>), typeof(RavenRepository<>));
+builder.Services.AddSingleton(typeof(IRavenRepository<>), typeof(RavenRepository<>));
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
 builder.Services.AddHttpClient("OfficesAPI", httpClient =>
 {

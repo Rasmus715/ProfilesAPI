@@ -21,4 +21,8 @@
       <ProjectReference Include="..\CommunicationModels\CommunicationModels.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <InternalsVisibleTo Include ="ProfilesAPI.Tests"/>
+    </ItemGroup>
+
 </Project>

@@ -11,7 +11,6 @@ namespace AuthorizationAPI.Handlers;
 public class LoginHandler : IRequestHandler<LoginQuery, JwtToken>
 {
     private readonly UserManager<Account> _userManager;
-
     private readonly SignInManager<Account> _signInManager;
     private readonly IJwtGenerator _jwtGenerator;
 

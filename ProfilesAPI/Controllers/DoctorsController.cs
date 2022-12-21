@@ -29,7 +29,14 @@ public class DoctorsController : ControllerBase
     [Route("{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
-        return Ok(await _mediator.Send(new DeleteDoctorCommand(id)));
+        try
+        {
+            return Ok(await _mediator.Send(new DeleteDoctorCommand(id)));
+        }
+        catch (ArgumentNullException)
+        {
+            return BadRequest(new {errorMessage = "Element not Found"});
+        }
     }
     
     [HttpPost]

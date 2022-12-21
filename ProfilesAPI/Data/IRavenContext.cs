@@ -2,6 +2,7 @@ using Microsoft.Extensions.Options;
 using ProfilesAPI.Models;
 using Raven.Client.Documents;
 using Raven.Client.Documents.Operations;
+using Raven.Client.Documents.Session;
 using Raven.Client.Exceptions.Database;
 using Raven.Client.ServerWide;
 using Raven.Client.ServerWide.Operations;
@@ -10,11 +11,11 @@ namespace ProfilesAPI.Data;
 
 public interface IRavenContext
 {
-    public IDocumentStore Store { get; set; }
+    IAsyncDocumentSession GetSession();
 }
 public class RavenContext : IRavenContext
 {
-    public IDocumentStore Store { get; set; }
+    private IDocumentStore Store { get; }
 
     private readonly PersistenceSettings _persistenceSettings;
 
@@ -45,5 +46,9 @@ public class RavenContext : IRavenContext
                 new CreateDatabaseOperation(new DatabaseRecord(_persistenceSettings.DatabaseName)));
         }
     }
-    
+
+    public IAsyncDocumentSession GetSession()
+    {
+        return Store.OpenAsyncSession();
+    }
 }
