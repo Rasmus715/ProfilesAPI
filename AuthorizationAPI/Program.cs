@@ -1,5 +1,6 @@
 using AuthorizationAPI.Commands;
 using AuthorizationAPI.Handlers;
+using AuthorizationAPI.Infrastructure;
 using AuthorizationAPI.Infrastructure.Security;
 using AuthorizationAPI.Models;
 using MediatR;
@@ -15,10 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
-builder.Services.AddRavenDbDocStore()
-    .AddRavenDbAsyncSession()
-    .AddIdentity<Account, IdentityRole>()
-    .AddRavenDbIdentityStores<Account, IdentityRole>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddHttpClient<IRequestHandler<RegisterCommand>, RegisterHandler>(client =>
 {

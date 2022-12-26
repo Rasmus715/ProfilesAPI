@@ -22,7 +22,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <InternalsVisibleTo Include ="ProfilesAPI.Tests"/>
+        <InternalsVisibleTo Include="ProfilesAPI.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Queries\Patient" />
     </ItemGroup>
 
 </Project>

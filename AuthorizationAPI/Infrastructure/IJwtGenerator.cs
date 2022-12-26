@@ -6,6 +6,11 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace AuthorizationAPI.Infrastructure.Security;
 
+public interface IJwtGenerator
+{
+    string CreateToken(Account account);
+}
+
 public class JwtGenerator : IJwtGenerator
 {
     private readonly SymmetricSecurityKey _key;
@@ -17,7 +22,7 @@ public class JwtGenerator : IJwtGenerator
 
     public string CreateToken(Account account)
     {
-        var claims = new List<Claim> {new (JwtRegisteredClaimNames.NameId, account.UserName)};
+        var claims = new List<Claim> {new (JwtRegisteredClaimNames.NameId, account.Email)};
         var credentials = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
         var tokenDescriptor = new SecurityTokenDescriptor
         {

@@ -3,8 +3,12 @@ using AutoMapper;
 using MediatR;
 using ProfilesAPI;
 using ProfilesAPI.Behaviours;
+using ProfilesAPI.Commands.Patient;
 using ProfilesAPI.Data;
+using ProfilesAPI.Handlers.Doctor;
+using ProfilesAPI.Handlers.Patient;
 using ProfilesAPI.Models;
+using ProfilesAPI.Queries;
 using ProfilesAPI.RabbitMq;
 using ProfilesAPI.Repositories;
 
@@ -25,7 +29,7 @@ builder.Services.AddSingleton<IRavenContext, RavenContext>();
 builder.Services.AddScoped<IRabbitMqService, RabbitMqService>();
 builder.Services.AddSingleton(typeof(IRavenRepository<>), typeof(RavenRepository<>));
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
-builder.Services.AddHttpClient("OfficesAPI", httpClient =>
+builder.Services.AddHttpClient<GetOfficeByDoctorIdHandler>("OfficesAPI", httpClient =>
 {
     httpClient.BaseAddress = new Uri("http://localhost:5055/api/Offices/");
 });

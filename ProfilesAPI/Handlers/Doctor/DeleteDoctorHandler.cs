@@ -1,15 +1,14 @@
 using MediatR;
-using ProfilesAPI.Commands;
-using ProfilesAPI.Models;
+using ProfilesAPI.Commands.Doctor;
 using ProfilesAPI.Repositories;
 
-namespace ProfilesAPI.Handlers;
+namespace ProfilesAPI.Handlers.Doctor;
 
 public class DeleteDoctorHandler : IRequestHandler<DeleteDoctorCommand, Unit>
 {
-    private readonly IRavenRepository<Doctor> _ravenRepository;
+    private readonly IRavenRepository<Models.Doctor> _ravenRepository;
 
-    public DeleteDoctorHandler(IRavenRepository<Doctor> ravenRepository)
+    public DeleteDoctorHandler(IRavenRepository<Models.Doctor> ravenRepository)
     {
         _ravenRepository = ravenRepository;
     }

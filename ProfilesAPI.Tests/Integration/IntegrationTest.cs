@@ -9,7 +9,7 @@ using Raven.TestDriver;
 
 namespace ProfilesAPI.UnitTests.Integration;
 
-public class IntegrationTest : RavenTestDriver
+public class IntegrationTest
 {
     protected readonly HttpClient HttpClient;
     public class RavenEmbeddedContext : RavenTestDriver, IRavenContext

@@ -2,12 +2,13 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using ProfilesAPI.Commands;
+using ProfilesAPI.Commands.Doctor;
 using ProfilesAPI.Controllers;
 using ProfilesAPI.Models;
 using ProfilesAPI.Queries;
 using ProfilesAPI.ViewModels;
 
-namespace ProfilesAPI.UnitTests;
+namespace ProfilesAPI.UnitTests.Unit.Controllers;
 
 public class DoctorControllersTests
 {

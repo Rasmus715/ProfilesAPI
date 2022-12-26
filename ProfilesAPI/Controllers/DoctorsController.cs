@@ -1,6 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using ProfilesAPI.Commands;
+using ProfilesAPI.Commands.Doctor;
 using ProfilesAPI.Models;
 using ProfilesAPI.Queries;
 using ProfilesAPI.ViewModels;

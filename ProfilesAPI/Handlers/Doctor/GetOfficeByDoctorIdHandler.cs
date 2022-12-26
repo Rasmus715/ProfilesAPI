@@ -1,18 +1,17 @@
 using System.Text.Json;
 using CommunicationModels;
 using MediatR;
-using ProfilesAPI.Models;
 using ProfilesAPI.Queries;
 using ProfilesAPI.Repositories;
 
-namespace ProfilesAPI.Handlers;
+namespace ProfilesAPI.Handlers.Doctor;
 
 public class GetOfficeByDoctorIdHandler : IRequestHandler<GetOfficeByDoctorIdQuery, Office?>
 {
     private readonly IHttpClientFactory _httpClientFactory;
-    private readonly IRavenRepository<Doctor> _ravenRepository;
+    private readonly IRavenRepository<Models.Doctor> _ravenRepository;
 
-    public GetOfficeByDoctorIdHandler(IHttpClientFactory httpClientFactory, IRavenRepository<Doctor> ravenRepository)
+    public GetOfficeByDoctorIdHandler(IHttpClientFactory httpClientFactory, IRavenRepository<Models.Doctor> ravenRepository)
     {
         _httpClientFactory = httpClientFactory;
         _ravenRepository = ravenRepository;
@@ -32,7 +31,7 @@ public class GetOfficeByDoctorIdHandler : IRequestHandler<GetOfficeByDoctorIdQue
         return office;
     }
 
-    private async Task<Office?> GetOffice(Doctor doctor, CancellationToken cancellationToken)
+    private async Task<Office?> GetOffice(Models.Doctor doctor, CancellationToken cancellationToken)
     {
         var httpClient = _httpClientFactory.CreateClient("OfficesAPI");
 
