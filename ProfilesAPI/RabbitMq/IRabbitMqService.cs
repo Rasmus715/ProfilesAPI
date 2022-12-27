@@ -1,19 +1,22 @@
 using System.Text;
 using System.Text.Json;
+using CommunicationModels;
 using RabbitMQ.Client;
+using Patient = CommunicationModels.Patient;
 
 namespace ProfilesAPI.RabbitMq;
 
 public interface IRabbitMqService
 {
-    void SendMessage(object obj);
+    void SendMessage(RabbitLog log);
+    void SendMessage(Patient patient);
 }
 
 public class RabbitMqService : IRabbitMqService
 {
-    public void SendMessage(object obj)
+    public void SendMessage(RabbitLog log)
     {
-        var message = JsonSerializer.Serialize(obj);
+        var message = JsonSerializer.Serialize(log);
         var factory = new ConnectionFactory
         {
             HostName = "localhost"
@@ -29,5 +32,10 @@ public class RabbitMqService : IRabbitMqService
             "",
             null,
             body);
+    }
+
+    public void SendMessage(Patient patient)
+    {
+        throw new NotImplementedException();
     }
 }

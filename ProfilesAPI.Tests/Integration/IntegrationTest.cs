@@ -1,6 +1,8 @@
+using CommunicationModels;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Moq;
 using ProfilesAPI.Data;
 using ProfilesAPI.RabbitMq;
@@ -29,7 +31,16 @@ public class IntegrationTest
     
     public class DummyRabbitMqService : IRabbitMqService
     {
-        public void SendMessage(object obj) { }
+        public void SendMessage(RabbitLog log)
+        {
+            return;
+        }
+
+        public void SendMessage(Patient patient)
+        {
+            throw new NotImplementedException();
+        }
+
     }
     
     protected IntegrationTest()

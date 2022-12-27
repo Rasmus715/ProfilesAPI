@@ -1,11 +1,12 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using ProfilesAPI.Commands.Doctor;
 using ProfilesAPI.Commands.Patient;
 using ProfilesAPI.Models;
 
 namespace ProfilesAPI.Controllers;
 
+[ApiController]
+[Route("api/[controller]")]
 public class PatientController : ControllerBase
 {
     private readonly IMediator _mediator;

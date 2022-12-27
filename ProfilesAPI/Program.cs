@@ -3,12 +3,9 @@ using AutoMapper;
 using MediatR;
 using ProfilesAPI;
 using ProfilesAPI.Behaviours;
-using ProfilesAPI.Commands.Patient;
 using ProfilesAPI.Data;
 using ProfilesAPI.Handlers.Doctor;
-using ProfilesAPI.Handlers.Patient;
 using ProfilesAPI.Models;
-using ProfilesAPI.Queries;
 using ProfilesAPI.RabbitMq;
 using ProfilesAPI.Repositories;
 
@@ -26,7 +23,7 @@ builder.Services.AddSingleton(mapper);
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.Configure<PersistenceSettings>(builder.Configuration.GetSection("Database"));
 builder.Services.AddSingleton<IRavenContext, RavenContext>();
-builder.Services.AddScoped<IRabbitMqService, RabbitMqService>();
+builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
 builder.Services.AddSingleton(typeof(IRavenRepository<>), typeof(RavenRepository<>));
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
 builder.Services.AddHttpClient<GetOfficeByDoctorIdHandler>("OfficesAPI", httpClient =>

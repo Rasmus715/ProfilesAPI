@@ -11333,6 +11333,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CommunicationModels >= 1.0.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.9",
       "Microsoft.AspNetCore.Mvc.Testing >= 7.0.1",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
@@ -11347,32 +11348,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/crackbargains/.nuget/packages/": {}
+    "C:\\Users\\crack\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Media/Projects/ProfilesAPI/ProfilesAPI.Tests/ProfilesAPI.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\ProfilesAPI.Tests\\ProfilesAPI.Tests.csproj",
       "projectName": "ProfilesAPI.Tests",
-      "projectPath": "/Volumes/Media/Projects/ProfilesAPI/ProfilesAPI.Tests/ProfilesAPI.Tests.csproj",
-      "packagesPath": "/Users/crackbargains/.nuget/packages/",
-      "outputPath": "/Volumes/Media/Projects/ProfilesAPI/ProfilesAPI.Tests/obj/",
+      "projectPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\ProfilesAPI.Tests\\ProfilesAPI.Tests.csproj",
+      "packagesPath": "C:\\Users\\crack\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\ProfilesAPI.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/crackbargains/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\crack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Volumes/Media/Projects/ProfilesAPI/ProfilesAPI/ProfilesAPI.csproj": {
-              "projectPath": "/Volumes/Media/Projects/ProfilesAPI/ProfilesAPI/ProfilesAPI.csproj"
+            "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\CommunicationModels\\CommunicationModels.csproj": {
+              "projectPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\CommunicationModels\\CommunicationModels.csproj"
+            },
+            "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\ProfilesAPI\\ProfilesAPI.csproj": {
+              "projectPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\ProfilesAPI\\ProfilesAPI.csproj"
             }
           }
         }
@@ -11448,7 +11454,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

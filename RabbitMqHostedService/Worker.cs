@@ -18,31 +18,9 @@ public class Worker : BackgroundService
     private ConnectionFactory _connectionFactory = null!;
     private IConnection _connection = null!;
     private IModel _channel = null!;
-    private IDocumentStore _documentStore = null!;
+    private readonly IDocumentStore _documentStore;
 
     public Worker(ILogger<Worker> logger)
-    {
-        _logger = logger;
-    }
-
-    public override async Task StartAsync(CancellationToken ctx)
-    {
-        var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
-        {
-            cfg.ReceiveEndpoint("order-created-event", e =>
-            {
-                e.Consumer<Consumer>();
-                e.BindDeadLetterQueue("DeadLetterExchange", "MTDeadLetterQueue", config =>
-                {
-                    config.SetExchangeArgument("x-message-ttl", TimeSpan.FromSeconds(60));
-                });
-            });
-        });
-        
-        await busControl.StartAsync(ctx);
-    }
-    
-    public Task StartAsyncRabbitMq(CancellationToken cancellationToken)
     {
         _documentStore = new DocumentStore
         {
@@ -65,6 +43,30 @@ public class Worker : BackgroundService
                 new CreateDatabaseOperation(new DatabaseRecord(_documentStore.Database)));
         }
 
+        _logger = logger;
+    }
+
+    public override async Task StartAsync(CancellationToken ctx)
+    {
+        // var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
+        // {
+        //     cfg.ReceiveEndpoint("order-created-event", e =>
+        //     {
+        //         e.Consumer<Consumer>();
+        //         e.BindDeadLetterQueue("DeadLetterExchange", "MTDeadLetterQueue", config =>
+        //         {
+        //             config.SetExchangeArgument("x-message-ttl", TimeSpan.FromSeconds(60));
+        //         });
+        //     });
+        // });
+        //
+        // await busControl.StartAsync(ctx);
+
+        await StartAsyncRabbitMq(ctx);
+    }
+
+    private Task StartAsyncRabbitMq(CancellationToken cancellationToken)
+    {
         _connectionFactory = new ConnectionFactory
         {
             HostName = "localhost",
@@ -118,7 +120,6 @@ public class Worker : BackgroundService
             string.Empty,
             headers);
         
-        
         return base.StartAsync(cancellationToken);
     }
 
@@ -150,7 +151,6 @@ public class Worker : BackgroundService
             consumer);
         
         await Task.CompletedTask;
-        
     }
 
     public override async Task StopAsync(CancellationToken cancellationToken)

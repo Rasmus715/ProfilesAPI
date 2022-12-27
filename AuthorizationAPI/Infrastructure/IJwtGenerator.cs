@@ -4,7 +4,7 @@ using System.Text;
 using AuthorizationAPI.Models;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AuthorizationAPI.Infrastructure.Security;
+namespace AuthorizationAPI.Infrastructure;
 
 public interface IJwtGenerator
 {
@@ -14,18 +14,26 @@ public interface IJwtGenerator
 public class JwtGenerator : IJwtGenerator
 {
     private readonly SymmetricSecurityKey _key;
+    private readonly IConfiguration _configuration;
     
-    public JwtGenerator(IConfiguration config)
+    public JwtGenerator(IConfiguration config, IConfiguration configuration)
     {
+        _configuration = configuration;
         _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetValue<string>("Jwt:Key")!));
     }
 
     public string CreateToken(Account account)
     {
-        var claims = new List<Claim> {new (JwtRegisteredClaimNames.NameId, account.Email)};
+        var claims = new List<Claim>
+        {
+            new (JwtRegisteredClaimNames.Email, account.Email),
+            new ("Role", "Patient")
+        };
         var credentials = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
         var tokenDescriptor = new SecurityTokenDescriptor
         {
+            Issuer = _configuration.GetValue<string>("Jwt:Issuer"),
+            Audience = _configuration.GetValue<string>("Jwt:Audience"),
             Subject = new ClaimsIdentity(claims),
             Expires = DateTime.Now.AddDays(7),
             SigningCredentials = credentials

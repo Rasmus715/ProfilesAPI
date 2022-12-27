@@ -10,3 +10,15 @@
 /Volumes/Media/Projects/ProfilesAPI/CommunicationModels/obj/Debug/net7.0/refint/CommunicationModels.dll
 /Volumes/Media/Projects/ProfilesAPI/CommunicationModels/obj/Debug/net7.0/CommunicationModels.pdb
 /Volumes/Media/Projects/ProfilesAPI/CommunicationModels/obj/Debug/net7.0/ref/CommunicationModels.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\bin\Debug\net7.0\CommunicationModels.deps.json
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\bin\Debug\net7.0\CommunicationModels.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\bin\Debug\net7.0\CommunicationModels.pdb
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.csproj.AssemblyReference.cache
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.AssemblyInfoInputs.cache
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.AssemblyInfo.cs
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.csproj.CoreCompileInputs.cache
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\refint\CommunicationModels.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\CommunicationModels.pdb
+C:\Users\crack\RiderProjects\ProfilesAPI\CommunicationModels\obj\Debug\net7.0\ref\CommunicationModels.dll

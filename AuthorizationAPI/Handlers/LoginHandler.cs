@@ -1,45 +1,48 @@
+using AuthorizationAPI.Data;
 using AuthorizationAPI.Exceptions;
-using AuthorizationAPI.Infrastructure.Security;
+using AuthorizationAPI.Infrastructure;
 using AuthorizationAPI.Models;
 using AuthorizationAPI.Queries;
 using AuthorizationAPI.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Raven.Client.Documents;
 
 namespace AuthorizationAPI.Handlers;
 
 public class LoginHandler : IRequestHandler<LoginQuery, JwtToken>
 {
-    private readonly UserManager<Account> _userManager;
-    private readonly SignInManager<Account> _signInManager;
     private readonly IJwtGenerator _jwtGenerator;
+    private readonly RavenDbContext _ravenDbContext;
+    private readonly IPasswordHashGenerator _passwordHashGenerator;
 
-    public LoginHandler(UserManager<Account> userManager, SignInManager<Account> signInManager, IJwtGenerator jwtGenerator)
+    public LoginHandler(RavenDbContext ravenDbContext, IJwtGenerator jwtGenerator, IPasswordHashGenerator passwordHashGenerator)
     {
-        _userManager = userManager;
-        _signInManager = signInManager;
+        _ravenDbContext = ravenDbContext;
         _jwtGenerator = jwtGenerator;
+        _passwordHashGenerator = passwordHashGenerator;
     }
 
     public async Task<JwtToken> Handle(LoginQuery request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByEmailAsync(request.Vm.Email);
+        var store = _ravenDbContext.Store;
+        using var session = store.OpenAsyncSession();
+        var account = await session.Query<Account>()
+            .Search(a => a.Email, request.LoginViewModel.Email)
+            .FirstOrDefaultAsync(cancellationToken);
+
+        if (account == null)
+        {
+            throw new ArgumentNullException(nameof(request.LoginViewModel), "User is not found");
+        }
+
+        if (!_passwordHashGenerator.VerifyHash(request.LoginViewModel.Password, account.PasswordHash))
+            throw new WrongPasswordException();
         
-        if (user == null)
+        return new JwtToken
         {
-            throw new ArgumentNullException(nameof(request.Vm), "User is not found");
-        }
-
-        var result = await _signInManager.CheckPasswordSignInAsync(user, request.Vm.Password, false);
-
-        if (result.Succeeded)
-        {
-            return new JwtToken
-            {
-                Token = _jwtGenerator.CreateToken(user)
-            };
-        }
-
-        throw new WrongPasswordException();
+            Token = _jwtGenerator.CreateToken(account)
+        };
+     
     }
 }

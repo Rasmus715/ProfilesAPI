@@ -1,49 +1,66 @@
 using AuthorizationAPI.Commands;
+using AuthorizationAPI.Data;
+using AuthorizationAPI.Infrastructure;
 using AuthorizationAPI.Models;
+using AuthorizationAPI.RabbitMq;
+using AuthorizationAPI.ViewModels;
+using CommunicationModels;
 using MediatR;
-using Microsoft.AspNetCore.Identity;
+using Raven.Client.Documents;
 
 namespace AuthorizationAPI.Handlers;
 
 public class RegisterHandler : IRequestHandler<RegisterCommand>
 {
-    private readonly HttpClient _httpClient;
+    private readonly RavenDbContext _dbContext;
+    private readonly IPasswordHashGenerator _passwordHashGenerator;
+    private readonly IRabbitMqService _rabbitMq;
+    private readonly RegisterValidator _registerValidator;
 
-    public RegisterHandler(HttpClient httpClient, UserManager<Account> userManager)
+    public RegisterHandler(IPasswordHashGenerator passwordHashGenerator, RavenDbContext dbContext, 
+       IRabbitMqService rabbitMq, RegisterValidator registerValidator)
     {
-        _httpClient = httpClient;
+        _passwordHashGenerator = passwordHashGenerator;
+        _dbContext = dbContext;
+        _rabbitMq = rabbitMq;
+        _registerValidator = registerValidator;
     }
     
     public async Task<Unit> Handle(RegisterCommand request, CancellationToken cancellationToken)
     {
-      
-            // var httpResponseMessage = await _httpClient.GetAsync("?id=" + request.RegisterViewModel, cancellationToken);
-            //
-            // if (!httpResponseMessage.IsSuccessStatusCode) 
-            //     throw new HttpRequestException("ProfilesAPI returned code: " + httpResponseMessage.StatusCode);
-            //
-            // await using var contentStream =
-            //     await httpResponseMessage.Content.ReadAsStreamAsync(cancellationToken);
-            //
-            // var doctor = await JsonSerializer.DeserializeAsync
-            //     <Doctor>(contentStream, cancellationToken: cancellationToken, 
-            //         options: new JsonSerializerOptions
-            //         {
-            //             PropertyNameCaseInsensitive = true,
-            //         });
-            //
-            // httpResponseMessage = await _httpClient.PatchAsync("");
+        await _registerValidator.ValidateAsync(request.RegisterViewModel, cancellationToken);
         
-        var user = new Account
+        var store = _dbContext.Store;
+        using var session = store.OpenAsyncSession();
+        
+        var account = await session.Query<Account>()
+            .Search(a => a.Email, request.RegisterViewModel.Email)
+            .FirstOrDefaultAsync(cancellationToken);
+
+        if (account is not null)
+            throw new Exception("User with this email already exists");
+
+        account = new Account
         {
-            Id = default,
-            PasswordHash = null,
+            Id = Guid.NewGuid().ToString(),
+            PasswordHash = _passwordHashGenerator.GenerateHash(request.RegisterViewModel.Password),
             PhoneNumber = null,
-            Email = null,
-            IsEmailVerified = false,
+            Email = request.RegisterViewModel.Email,
+            IsEmailVerified = true,
             PhotoId = null,
-            CreatedAt = null,
-            UpdatedAt = null
+            CreatedAt = DateTime.Now,
+            UpdatedAt = DateTime.Now
         };
+        await session.StoreAsync(account, cancellationToken);
+        await session.SaveChangesAsync(cancellationToken);
+
+        var x = new Patient
+        {
+            Id = Guid.NewGuid().ToString(),
+            AccountId = account.Id
+        };
+        _rabbitMq.SendMessage(x);
+
+        return Unit.Value;
     }
 }

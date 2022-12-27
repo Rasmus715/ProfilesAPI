@@ -1677,32 +1677,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/crackbargains/.nuget/packages/": {}
+    "C:\\Users\\crack\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Media/Projects/ProfilesAPI/LoggingAPI/LoggingAPI.csproj",
+      "projectUniqueName": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\LoggingAPI\\LoggingAPI.csproj",
       "projectName": "LoggingAPI",
-      "projectPath": "/Volumes/Media/Projects/ProfilesAPI/LoggingAPI/LoggingAPI.csproj",
-      "packagesPath": "/Users/crackbargains/.nuget/packages/",
-      "outputPath": "/Volumes/Media/Projects/ProfilesAPI/LoggingAPI/obj/",
+      "projectPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\LoggingAPI\\LoggingAPI.csproj",
+      "packagesPath": "C:\\Users\\crack\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\LoggingAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/crackbargains/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\crack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Volumes/Media/Projects/ProfilesAPI/CommunicationModels/CommunicationModels.csproj": {
-              "projectPath": "/Volumes/Media/Projects/ProfilesAPI/CommunicationModels/CommunicationModels.csproj"
+            "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\CommunicationModels\\CommunicationModels.csproj": {
+              "projectPath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\CommunicationModels\\CommunicationModels.csproj"
             }
           }
         }
@@ -1753,7 +1755,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
