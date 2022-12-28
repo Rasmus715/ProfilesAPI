@@ -28,7 +28,12 @@ public class RegisterHandler : IRequestHandler<RegisterCommand>
     
     public async Task<Unit> Handle(RegisterCommand request, CancellationToken cancellationToken)
     {
-        await _registerValidator.ValidateAsync(request.RegisterViewModel, cancellationToken);
+        var validationResult = await _registerValidator.ValidateAsync(request.RegisterViewModel, cancellationToken);
+
+        if (!validationResult.IsValid)
+        {
+            throw new Exception(validationResult.Errors.First().ErrorMessage);
+        }
         
         var store = _dbContext.Store;
         using var session = store.OpenAsyncSession();

@@ -1,6 +1,6 @@
 using MediatR;
-using ProfilesAPI.Models;
+using ProfilesAPI.ViewModels;
 
-namespace ProfilesAPI.Queries;
+namespace ProfilesAPI.Queries.Doctor;
 
-public record GetDoctorByIdQuery(Guid Id) : IRequest<Doctor>;
+public record GetDoctorByIdQuery(Guid Id) : IRequest<DoctorViewModel>;

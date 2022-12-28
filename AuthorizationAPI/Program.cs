@@ -1,7 +1,11 @@
 using System.Reflection;
 using System.Text;
+using Asp.Versioning;
+using AuthorizationAPI.Commands;
 using AuthorizationAPI.Data;
+using AuthorizationAPI.Handlers;
 using AuthorizationAPI.Infrastructure;
+using AuthorizationAPI.Queries;
 using AuthorizationAPI.RabbitMq;
 using AuthorizationAPI.ViewModels;
 using FluentValidation;
@@ -16,6 +20,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddApiVersioning(options => options.DefaultApiVersion = new ApiVersion(1, 0));
+builder.Services.AddValidatorsFromAssemblyContaining<RegisterValidator>();
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -46,7 +52,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-builder.Services.AddValidatorsFromAssemblyContaining<RegisterValidator>();
+builder.Services.AddRouting(
+    options => options.LowercaseUrls = true);
 builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
@@ -76,6 +83,11 @@ builder.Services.AddAuthentication(options =>
 
 
 //Obsolete
+builder.Services.AddHttpClient<IRequestHandler<LoginQuery, JwtToken>, LoginHandler>("ProfilesAPI",client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("ExternalAPIs:Profiles")!);
+});
+
 builder.Services.AddHttpClient("ProfilesAPI",client =>
 {
     client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("ExternalAPIs:Profiles")!);

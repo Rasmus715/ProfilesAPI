@@ -6,24 +6,25 @@ using ProfilesAPI.Commands.Doctor;
 using ProfilesAPI.Controllers;
 using ProfilesAPI.Models;
 using ProfilesAPI.Queries;
+using ProfilesAPI.Queries.Doctor;
 using ProfilesAPI.ViewModels;
 
 namespace ProfilesAPI.UnitTests.Unit.Controllers;
 
 public class DoctorControllersTests
 {
-    private readonly DoctorsController _doctorsController;
+    private readonly DoctorController _doctorController;
     private readonly Mock<IMediator> _mediator;
     public DoctorControllersTests()
     {
         _mediator = new Mock<IMediator>();
-        _doctorsController = new DoctorsController(_mediator.Object);
+        _doctorController = new DoctorController(_mediator.Object);
     }
 
     [Fact]
     public async Task Get()
     {
-        var result = await _doctorsController.Get();
+        var result = await _doctorController.Get();
         Assert.IsType<OkObjectResult>(result);
     }
     
@@ -32,14 +33,14 @@ public class DoctorControllersTests
     {
         _mediator.Setup(m => m.Send(It.IsAny<GetDoctorByIdQuery>(), It.IsAny<CancellationToken>()))
             .Returns(() => Task.FromResult(new Doctor()));
-        var result = await _doctorsController.Get(Guid.NewGuid());  
+        var result = await _doctorController.Get(Guid.NewGuid());  
         Assert.IsType<OkObjectResult>(result);
     }
     
     [Fact]
     public async Task Delete()
     {
-        var result = await _doctorsController.Delete(Guid.NewGuid());  
+        var result = await _doctorController.Delete(Guid.NewGuid());  
         Assert.IsType<OkObjectResult>(result);
     }
     
@@ -51,7 +52,7 @@ public class DoctorControllersTests
              .Returns(() => Task.FromResult(new Doctor()));
        
         //Act
-        var result = await _doctorsController.Create(new DoctorViewModel());  
+        var result = await _doctorController.Create(new DoctorViewModel());  
         
         //Assert
         Assert.IsType<CreatedAtActionResult>(result);
@@ -65,7 +66,7 @@ public class DoctorControllersTests
              .ThrowsAsync(new ArgumentNullException());
         
         //Act
-        var result = await _doctorsController.Update(new Doctor());
+        var result = await _doctorController.Update(new Doctor());
          
         //Assert
         Assert.IsType<BadRequestObjectResult>(result);
@@ -76,7 +77,7 @@ public class DoctorControllersTests
     { 
         
         //Act 
-        var result = await _doctorsController.GetOffice(Guid.NewGuid());
+        var result = await _doctorController.GetOffice(Guid.NewGuid());
         
         //Assert
         Assert.IsType<OkObjectResult>(result);
@@ -90,7 +91,7 @@ public class DoctorControllersTests
             .ThrowsAsync(new KeyNotFoundException());
         
         //Act 
-        var result = await _doctorsController.GetOffice(Guid.NewGuid());
+        var result = await _doctorController.GetOffice(Guid.NewGuid());
         
         //Assert
         Assert.IsType<BadRequestObjectResult>(result);
@@ -104,7 +105,7 @@ public class DoctorControllersTests
             .ThrowsAsync(new ArgumentNullException());
         
         //Act 
-        var result = await _doctorsController.GetOffice(Guid.NewGuid());
+        var result = await _doctorController.GetOffice(Guid.NewGuid());
         
         //Assert
         Assert.IsType<NoContentResult>(result);

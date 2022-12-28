@@ -105,3 +105,6 @@ C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\obj\Debug\net7.0\Autho
 C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\obj\Debug\net7.0\AuthorizationAPI.genruntimeconfig.cache
 C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\obj\Debug\net7.0\ref\AuthorizationAPI.dll
 C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\bin\Debug\net7.0\Asp.Versioning.Abstractions.dll
+C:\Users\crack\RiderProjects\ProfilesAPI\AuthorizationAPI\bin\Debug\net7.0\Asp.Versioning.Http.dll

@@ -8,7 +8,7 @@ namespace AuthorizationAPI.Infrastructure;
 
 public interface IJwtGenerator
 {
-    string CreateToken(Account account);
+    string CreateToken(Account account, bool isDoctor = false);
 }
 
 public class JwtGenerator : IJwtGenerator
@@ -22,12 +22,12 @@ public class JwtGenerator : IJwtGenerator
         _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetValue<string>("Jwt:Key")!));
     }
 
-    public string CreateToken(Account account)
+    public string CreateToken(Account account, bool isDoctor = false)
     {
         var claims = new List<Claim>
         {
             new (JwtRegisteredClaimNames.Email, account.Email),
-            new ("Role", "Patient")
+            new ("Role", isDoctor ? "Doctor" : "Patient")
         };
         var credentials = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
         var tokenDescriptor = new SecurityTokenDescriptor

@@ -1,6 +1,5 @@
 using MediatR;
-using ProfilesAPI.Models;
 
-namespace ProfilesAPI.Queries;
+namespace ProfilesAPI.Queries.Doctor;
 
-public record GetDoctorsQuery : IRequest<IEnumerable<Doctor>>;
+public record GetDoctorsQuery : IRequest<IEnumerable<Models.Doctor>>;

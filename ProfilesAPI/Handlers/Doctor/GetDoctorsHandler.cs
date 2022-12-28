@@ -1,5 +1,6 @@
 using MediatR;
 using ProfilesAPI.Queries;
+using ProfilesAPI.Queries.Doctor;
 using ProfilesAPI.Repositories;
 
 namespace ProfilesAPI.Handlers.Doctor;

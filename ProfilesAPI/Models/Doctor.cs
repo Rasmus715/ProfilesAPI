@@ -1,3 +1,5 @@
+using ProfilesAPI.Enums;
+
 namespace ProfilesAPI.Models;
 
 public class Doctor : IEntity
@@ -11,4 +13,5 @@ public class Doctor : IEntity
     public Guid? SpecializationId { get; set; }
     public Guid? OfficeId { get; set; }
     public int CareerStartYear { get; set; }
+    public Status Status { get; set; }
 }

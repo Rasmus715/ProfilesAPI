@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "er19QT128PKpcT+VHYcUCIw/BQPah6Q92cczT3DHN4hB6x5DU7XOvatattVkgoA82yWdp3DcmzaljA98Na0YFA==",
+  "dgSpecHash": "Wzv+AKpm4WMthnkPiCoqwb6HbYnD5gBM9we0twCE0kIkgt8FcP4ZfCyWYmxnRt4aFas3OImiihWCkC2Mfvotsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\crack\\RiderProjects\\ProfilesAPI\\AuthorizationAPI\\AuthorizationAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\crack\\.nuget\\packages\\asp.versioning.abstractions\\7.0.0\\asp.versioning.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\crack\\.nuget\\packages\\asp.versioning.http\\7.0.0\\asp.versioning.http.7.0.0.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\lambda2js.signed\\3.1.3\\lambda2js.signed.3.1.3.nupkg.sha512",

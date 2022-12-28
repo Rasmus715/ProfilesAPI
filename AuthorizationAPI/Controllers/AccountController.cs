@@ -1,4 +1,6 @@
+using Asp.Versioning;
 using AuthorizationAPI.Commands;
+using AuthorizationAPI.Exceptions;
 using AuthorizationAPI.Queries;
 using AuthorizationAPI.ViewModels;
 using MediatR;
@@ -8,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AuthorizationAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 public class AccountController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -19,6 +21,8 @@ public class AccountController : ControllerBase
     }
     
     [HttpPost]
+    [ApiVersion("1")]
+    [Route("register")]
     public async Task<IActionResult> Register(RegisterViewModel vm)
     {
         try
@@ -36,10 +40,21 @@ public class AccountController : ControllerBase
     }
 
     [HttpPost]
+    [ApiVersion("1")]
     [Route("auth")]
     public async Task<IActionResult> Authenticate(LoginViewModel vm)
     {
-        return Ok(await _mediator.Send(new LoginQuery(vm)));
+        try
+        {
+            return Ok(await _mediator.Send(new LoginQuery(vm)));
+        }
+        catch (UnsuccessfulLoginException)
+        {
+            return BadRequest(new
+            {
+                error = "Either an email or a password is incorrect"
+            });
+        }
     }
     
     [HttpPost]
